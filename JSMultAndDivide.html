@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Multiply & Divide </title>
+</head>
+
+<h1> Multiply & Divide </h1>
+
+<input type="text" name="x" id="Value_1">
+
+<br>
+
+<input type="text" name="y" id="Value_2">
+
+<br>
+
+<input type="button" name="Multiply & Divide" value="Multiply & Divide" onclick="calc()">
+
+<br>
+
+<p id= "result_1">
+
+</p>
+
+<p id= "result_2">
+
+</p>
+
+<script type="text/javascript">
+	
+function calc()
+
+{
+
+var x = document.getElementById('Value_1').value;
+
+var y = document.getElementById('Value_2').value;
+
+var result_1 = x * y;
+
+var result_2 = x/y;
+
+document.getElementById('result_1').innerHTML = result_1;
+
+document.getElementById('result_2').innerHTML = result_2;
+
+}
+
+</script>
+
+</html>

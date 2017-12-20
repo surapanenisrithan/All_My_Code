@@ -1,0 +1,17 @@
+body
+{
+	background-color: #ff00ee;
+	font-family: 'Macondo Swash Caps', cursive;
+}
+
+h1, h2
+{
+	color: #fffa02;
+	font-family: 'Macondo Swash Caps', cursive;
+	font-size: 20px;
+}
+
+#original_array, #only_even_array
+{
+	color: #00ffed;
+}

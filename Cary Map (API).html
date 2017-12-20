@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Map of Cary, NC (API) </title>
+
+	<style type="text/css">
+		#map
+		{
+			height: 400px;
+			width: 100%;
+		}
+		h1, h2, h3
+		{
+			color:white;
+		}
+		body
+		{
+			background-color:black;
+		}
+	</style>
+
+</head>
+
+<body>
+
+<center>
+
+<h1> This is a Map of Cary, North Carolina: </h1>
+
+<h2> (With My House, West Regional Library, Park West Theatres, & Fred G. Bond Park Marked on it!) <h2>
+
+<div id = "map"> </div>
+
+<script type="text/javascript">
+
+
+	function initMap()
+	{
+		var Cary = {lat: 35.7915, lng: -78.7811};
+
+		var Home = {lat: 35.787140, lng: -78.901297};
+
+		var Park_West_14 = {lat: 35.8080, lng: -78.8196};
+
+		var Bond_Park = {lat: 35.7855, lng: -78.8262};
+
+		var W_Regional = {lat: 35.8147, lng: -78.8647};
+
+		var map = new google.maps.Map(document.getElementById('map'), {zoom: 12, center: Cary, maptypeId: 'satellite'});
+ 
+		var marker_1 = new google.maps.Marker({position: Home, map: map, label: 'Home'});
+
+		var marker_2 = new google.maps.Marker({position: Park_West_14, map: map, label: 'Park West'});
+
+		var marker_3 = new google.maps.Marker({position: Bond_Park, map: map, label: 'Bond Park'});
+
+		var marker_4 = new google.maps.Marker({position: W_Regional, map: map, label: 'Library'})
+	}
+
+</script>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa7L9kyUusP9XDGMbDnpSqTppUWl9r4p4&callback=initMap">
+	
+</script>
+
+<h3> --- Srithan Surapaneni --- </h3>
+
+</center>
+
+</body>
+
+</html>

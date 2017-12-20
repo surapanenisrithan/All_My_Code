@@ -1,0 +1,19 @@
+body
+{
+	background-color: #00fceb;
+	padding: 25px;
+}
+h1
+{
+	color: #21fc00;
+	font-family: Arial;
+	font-size: 30px;
+}
+p
+{
+	color: #fc00eb;
+	font-family: Comic Sans MS;
+	font-size: 15px;
+}
+
+<style>
